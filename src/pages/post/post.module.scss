@@ -1,1 +1,24 @@
-// TODO
+.logo {
+    margin-bottom: 5rem;
+    max-width: 1880;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    strong{
+        color: var(--Heading);
+        font: bold 3rem 'Inter', sans-serif ;        
+    }
+    ul {
+        display: flex;
+        margin: 1.5rem 0 1rem;
+        & li {
+            margin-right: 1.5rem;
+            
+            & svg{
+                margin-right: 0.65rem;
+            }
+        }
+    }
+}

@@ -49,7 +49,7 @@ export default function Home({postsPagination}:HomeProps) {
   const [currentPage, setCurrentPage]= useState(1)  
 
   async function handleGetPosts():Promise<void>{
-      if(currentPage!=1 && nextpage==null){
+      if(!nextpage){
         return ;
       }
     
